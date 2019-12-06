@@ -5,8 +5,8 @@ This project contains various breadboard-compatible breakouts for testing and ed
 ## Breakouts
 
 Device | Folder | Status | Link
-... | ... | ... | ...
-ICE40HX8K-BG121 | `/boards/ice40hx8k-bg121` | In progress | 
+--- | --- | --- | ---
+ICE40HX8K-BG121 | `/boards/ice40hx8k-bg121` | In progress... | ...
 
 ## Dependencies
 
