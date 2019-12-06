@@ -1,4 +1,4 @@
-# `kicad-breakouts`
+# kicad-breakouts
 
 This project contains various breadboard-compatible breakouts for testing and educational purposes.
 
