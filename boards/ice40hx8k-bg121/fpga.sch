@@ -202,106 +202,33 @@ $EndComp
 Connection ~ 650  2550
 Wire Wire Line
 	650  2750 650  2550
-$Comp
-L Oscillator:ASDMB-xxxMHz U4
-U 1 1 5DEF559F
-P 3150 7050
-F 0 "U4" H 2850 7300 50  0000 L CNN
-F 1 "ASDMB-xxxMHz" H 3300 6800 50  0000 L CNN
-F 2 "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm" H 3150 7050 50  0001 C CNN
-F 3 "https://abracon.com/Oscillators/ASDMB.pdf" H 3450 7500 50  0001 C CNN
-	1    3150 7050
-	1    0    0    -1  
-$EndComp
-Text Label 3650 7050 0    50   ~ 0
+Text Label 3900 6400 0    50   ~ 0
 FPGA_CLK
 $Comp
 L power:GND #PWR0126
 U 1 1 5DEF55AC
-P 3250 7350
-F 0 "#PWR0126" H 3250 7100 50  0001 C CNN
-F 1 "GND" H 3255 7177 50  0000 C CNN
-F 2 "" H 3250 7350 50  0001 C CNN
-F 3 "" H 3250 7350 50  0001 C CNN
-	1    3250 7350
+P 3450 6750
+F 0 "#PWR0126" H 3450 6500 50  0001 C CNN
+F 1 "GND" H 3455 6577 50  0000 C CNN
+F 2 "" H 3450 6750 50  0001 C CNN
+F 3 "" H 3450 6750 50  0001 C CNN
+	1    3450 6750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:R_US R15
-U 1 1 5DEF55B2
-P 2450 7250
-F 0 "R15" H 2518 7296 50  0000 L CNN
-F 1 "4k7" H 2518 7205 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" V 2490 7240 50  0001 C CNN
-F 3 "~" H 2450 7250 50  0001 C CNN
-	1    2450 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 7050 2750 7050
-$Comp
-L Connector:TestPoint_Alt TP5
-U 1 1 5DEF55B9
-P 2450 6950
-F 0 "TP5" H 2250 7100 50  0000 L CNN
-F 1 "OSC_STBY" H 2050 7000 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 2650 6950 50  0001 C CNN
-F 3 "~" H 2650 6950 50  0001 C CNN
-	1    2450 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 7100 2450 7050
-$Comp
-L power:GND #PWR0127
-U 1 1 5DEF55C0
-P 2450 7450
-F 0 "#PWR0127" H 2450 7200 50  0001 C CNN
-F 1 "GND" H 2455 7277 50  0000 C CNN
-F 2 "" H 2450 7450 50  0001 C CNN
-F 3 "" H 2450 7450 50  0001 C CNN
-	1    2450 7450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2450 7450 2450 7400
-$Comp
-L Connector:TestPoint_Alt TP6
-U 1 1 5DEF55C7
-P 3600 6950
-F 0 "TP6" H 3658 7068 50  0000 L CNN
-F 1 "FPGA_CLK" H 3658 6977 50  0000 L CNN
-F 2 "Connector_Wire:SolderWirePad_1x01_Drill1mm" H 3800 6950 50  0001 C CNN
-F 3 "~" H 3800 6950 50  0001 C CNN
-	1    3600 6950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 7050 3600 7050
-Wire Wire Line
-	3600 6950 3600 7050
-Wire Wire Line
-	2450 6950 2450 7050
-Connection ~ 2450 7050
-Connection ~ 3600 7050
-Wire Wire Line
-	3600 7050 4000 7050
 $Comp
 L power:+3V3 #PWR0128
 U 1 1 5DEF55A5
-P 3250 6750
-F 0 "#PWR0128" H 3250 6600 50  0001 C CNN
-F 1 "+3V3" H 3265 6923 50  0000 C CNN
-F 2 "" H 3250 6750 50  0001 C CNN
-F 3 "" H 3250 6750 50  0001 C CNN
-	1    3250 6750
+P 3450 6050
+F 0 "#PWR0128" H 3450 5900 50  0001 C CNN
+F 1 "+3V3" H 3465 6223 50  0000 C CNN
+F 2 "" H 3450 6050 50  0001 C CNN
+F 3 "" H 3450 6050 50  0001 C CNN
+	1    3450 6050
 	1    0    0    -1  
 $EndComp
 Text Label 10200 3950 0    50   ~ 0
 FPGA_CLK
-Text Label 10200 4850 0    50   ~ 0
-CDONE
-Text GLabel 10200 4950 2    50   BiDi ~ 0
+Text GLabel 10600 4950 2    50   BiDi ~ 0
 PROG_CRESET_B
 Text GLabel 10400 5350 2    50   BiDi ~ 0
 PROG_SS
@@ -311,64 +238,38 @@ Text GLabel 10200 5150 2    50   BiDi ~ 0
 PROG_SDI
 Text GLabel 10200 5050 2    50   BiDi ~ 0
 PROG_SDO
-Text GLabel 6350 2400 2    50   BiDi ~ 0
-IO_A00
-Text GLabel 4150 2500 0    50   BiDi ~ 0
-IO_A01
-Text GLabel 6350 1400 2    50   BiDi ~ 0
-IO_A02
-Text GLabel 6350 1500 2    50   BiDi ~ 0
-IO_A03
-Text GLabel 6350 1600 2    50   BiDi ~ 0
-IO_A04
-Text GLabel 6350 1700 2    50   BiDi ~ 0
-IO_A05
-Text GLabel 6350 1800 2    50   BiDi ~ 0
-IO_A06
-Text GLabel 6350 1900 2    50   BiDi ~ 0
-IO_A07
 Text GLabel 4150 1400 0    50   BiDi ~ 0
-IO_A08
+IO_A00
 Text GLabel 4150 1500 0    50   BiDi ~ 0
+IO_A01
+Text GLabel 4150 2200 0    50   BiDi ~ 0
+IO_A03
+Text GLabel 4150 2500 0    50   BiDi ~ 0
+IO_A04
+Text GLabel 4150 2400 0    50   BiDi ~ 0
+IO_A05
+Text GLabel 6350 2300 2    50   BiDi ~ 0
+IO_A07
+Text GLabel 6350 2200 2    50   BiDi ~ 0
+IO_A08
+Text GLabel 6350 2000 2    50   BiDi ~ 0
 IO_A09
-Text GLabel 10200 2250 2    50   BiDi ~ 0
-IO_B00
-Text GLabel 10200 2350 2    50   BiDi ~ 0
-IO_B01
 Text GLabel 10200 1450 2    50   BiDi ~ 0
-IO_B02
-Text GLabel 10200 1550 2    50   BiDi ~ 0
-IO_B03
-Text GLabel 10200 1650 2    50   BiDi ~ 0
-IO_B04
-Text GLabel 10200 1850 2    50   BiDi ~ 0
-IO_B06
-Text GLabel 10200 1950 2    50   BiDi ~ 0
-IO_B07
-Text GLabel 8000 1450 0    50   BiDi ~ 0
-IO_B08
-Text GLabel 8000 1550 0    50   BiDi ~ 0
-IO_B09
+IO_B00
 Text GLabel 10200 1750 2    50   BiDi ~ 0
+IO_B01
+Text GLabel 10200 2350 2    50   BiDi ~ 0
+IO_B02
+Text GLabel 8000 1950 0    50   BiDi ~ 0
+IO_B03
+Text GLabel 8000 2250 0    50   BiDi ~ 0
+IO_B04
+Text GLabel 10200 1550 2    50   BiDi ~ 0
+IO_B06
+Text GLabel 10200 1850 2    50   BiDi ~ 0
 IO_B05
-Text GLabel 10200 4050 2    50   BiDi ~ 0
-IO_C00
-Text GLabel 8000 3950 0    50   BiDi ~ 0
-IO_C01
-Text GLabel 8000 4050 0    50   BiDi ~ 0
-IO_C02
-Text GLabel 8000 4150 0    50   BiDi ~ 0
-IO_C03
-Text GLabel 8000 4250 0    50   BiDi ~ 0
-IO_C04
-Text GLabel 8000 4450 0    50   BiDi ~ 0
-IO_C06
-Text GLabel 8000 4550 0    50   BiDi ~ 0
-IO_C07
-Text GLabel 8000 4350 0    50   BiDi ~ 0
-IO_C05
 Text GLabel 6350 4000 2    50   BiDi ~ 0
-IO_D04
+IO_D03
 Text GLabel 1050 1550 0    50   UnSpc ~ 0
 VCCIO_C
 Text GLabel 1050 1450 0    50   UnSpc ~ 0
@@ -390,21 +291,17 @@ Wire Wire Line
 	2750 1350 2750 1250
 Wire Wire Line
 	2600 1350 2750 1350
-Text GLabel 4150 4550 0    50   BiDi ~ 0
-IO_D03+
-Text GLabel 4150 4650 0    50   BiDi ~ 0
-IO_D03-
-Text GLabel 4150 3950 0    50   BiDi ~ 0
+Text GLabel 6350 4200 2    50   BiDi ~ 0
 IO_D00+
-Text GLabel 4150 4050 0    50   BiDi ~ 0
+Text GLabel 6350 4100 2    50   BiDi ~ 0
 IO_D00-
-Text GLabel 4150 4150 0    50   BiDi ~ 0
+Text GLabel 6350 4700 2    50   BiDi ~ 0
 IO_D01+
-Text GLabel 4150 4250 0    50   BiDi ~ 0
+Text GLabel 6350 4800 2    50   BiDi ~ 0
 IO_D01-
-Text GLabel 4150 4350 0    50   BiDi ~ 0
+Text GLabel 6350 4500 2    50   BiDi ~ 0
 IO_D02+
-Text GLabel 4150 4450 0    50   BiDi ~ 0
+Text GLabel 6350 4600 2    50   BiDi ~ 0
 IO_D02-
 $Comp
 L Device:C_Small C5
@@ -489,7 +386,7 @@ U 1 1 5E033D30
 P 2650 4050
 F 0 "R11" H 2718 4096 50  0000 L CNN
 F 1 "100R" H 2718 4005 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2650 4050 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2650 4050 50  0001 C CNN
 F 3 "~" H 2650 4050 50  0001 C CNN
 	1    2650 4050
 	1    0    0    -1  
@@ -500,7 +397,7 @@ U 1 1 5E03781F
 P 10300 5600
 F 0 "R13" H 10368 5646 50  0000 L CNN
 F 1 "4k7" H 10368 5555 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 10300 5600 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10300 5600 50  0001 C CNN
 F 3 "~" H 10300 5600 50  0001 C CNN
 	1    10300 5600
 	1    0    0    -1  
@@ -590,7 +487,7 @@ U 1 1 5E0592CE
 P 2650 5000
 F 0 "R12" H 2718 5046 50  0000 L CNN
 F 1 "100R" H 2718 4955 50  0000 L CNN
-F 2 "Diode_SMD:D_0805_2012Metric" H 2650 5000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2650 5000 50  0001 C CNN
 F 3 "~" H 2650 5000 50  0001 C CNN
 	1    2650 5000
 	1    0    0    -1  
@@ -780,58 +677,7 @@ F 3 "" H 1650 6300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10200 4850 10450 4850
-Wire Wire Line
 	10200 3950 10600 3950
-$Comp
-L Device:LED_ALT D?
-U 1 1 5DF00B55
-P 2650 6050
-AR Path="/5DF00B55" Ref="D?"  Part="1" 
-AR Path="/5E001CF2/5DF00B55" Ref="D12"  Part="1" 
-F 0 "D12" H 2650 5950 50  0000 C CNN
-F 1 "CDONE" H 2650 6200 50  0000 C CNN
-F 2 "LED_SMD:LED_1206_3216Metric" H 2650 6050 50  0001 C CNN
-F 3 "~" H 2650 6050 50  0001 C CNN
-	1    2650 6050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R?
-U 1 1 5DF00B5B
-P 3250 6050
-AR Path="/5DF00B5B" Ref="R?"  Part="1" 
-AR Path="/5E001CF2/5DF00B5B" Ref="R14"  Part="1" 
-F 0 "R14" V 3150 6050 50  0000 C CNN
-F 1 "220R" V 3350 6050 50  0000 C CNN
-F 2 "Diode_SMD:D_0805_2012Metric" V 3290 6040 50  0001 C CNN
-F 3 "~" H 3250 6050 50  0001 C CNN
-	1    3250 6050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2500 6050 2350 6050
-Wire Wire Line
-	2350 6050 2350 5950
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5DF00B65
-P 2350 5950
-AR Path="/5DF00B65" Ref="#PWR?"  Part="1" 
-AR Path="/5E001CF2/5DF00B65" Ref="#PWR0129"  Part="1" 
-F 0 "#PWR0129" H 2350 5800 50  0001 C CNN
-F 1 "+3V3" H 2365 6123 50  0000 C CNN
-F 2 "" H 2350 5950 50  0001 C CNN
-F 3 "" H 2350 5950 50  0001 C CNN
-	1    2350 5950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2800 6050 3100 6050
-Text Label 3400 6050 0    50   ~ 0
-CDONE
-Wire Wire Line
-	3400 6050 3600 6050
 $Comp
 L power:+1V2 #PWR0123
 U 1 1 5E27D871
@@ -880,4 +726,86 @@ Wire Wire Line
 	1650 5450 1650 5800
 Connection ~ 1650 5450
 Connection ~ 1650 5800
+Wire Wire Line
+	10200 4950 10400 4950
+Wire Wire Line
+	10400 4950 10400 4800
+$Comp
+L Device:R_Small_US R14
+U 1 1 5E039345
+P 10400 4700
+F 0 "R14" H 10468 4746 50  0000 L CNN
+F 1 "4k7" H 10468 4655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10400 4700 50  0001 C CNN
+F 3 "~" H 10400 4700 50  0001 C CNN
+	1    10400 4700
+	1    0    0    -1  
+$EndComp
+Text GLabel 10600 4500 2    50   UnSpc ~ 0
+VCCIO_C
+Wire Wire Line
+	10400 4600 10400 4500
+Wire Wire Line
+	10400 4500 10600 4500
+$Comp
+L Oscillator:ASDMB-xxxMHz U4
+U 1 1 5DEF559F
+P 3350 6400
+F 0 "U4" H 3050 6650 50  0000 L CNN
+F 1 "ASDMB-xxxMHz" H 3500 6150 50  0000 L CNN
+F 2 "Oscillator:Oscillator_SMD_Abracon_ASDMB-4Pin_2.5x2.0mm" H 3350 6400 50  0001 C CNN
+F 3 "https://abracon.com/Oscillators/ASDMB.pdf" H 3650 6850 50  0001 C CNN
+	1    3350 6400
+	1    0    0    -1  
+$EndComp
+Connection ~ 10400 4950
+Wire Wire Line
+	10400 4950 10600 4950
+Wire Wire Line
+	3450 6750 3450 6700
+Wire Wire Line
+	3450 6050 3450 6100
+Wire Wire Line
+	3750 6400 4250 6400
+NoConn ~ 2950 6400
+Text GLabel 4150 1900 0    50   BiDi ~ 0
+IO_A02
+Text GLabel 6350 1500 2    50   BiDi ~ 0
+IO_A10
+Text GLabel 6350 1600 2    50   BiDi ~ 0
+IO_A11
+Text GLabel 6350 2400 2    50   BiDi ~ 0
+IO_A06
+Text GLabel 4150 4350 0    50   BiDi ~ 0
+IO_L4
+Text GLabel 4150 4950 0    50   BiDi ~ 0
+IO_L2
+Text GLabel 4150 4650 0    50   BiDi ~ 0
+IO_L3
+Text GLabel 4150 4050 0    50   BiDi ~ 0
+IO_L6
+Text GLabel 4150 5150 0    50   BiDi ~ 0
+IO_L0
+Text GLabel 4150 3950 0    50   BiDi ~ 0
+IO_L7
+Text GLabel 4150 4450 0    50   BiDi ~ 0
+IO_L5
+Text GLabel 4150 4550 0    50   BiDi ~ 0
+IO_L1
+Text GLabel 8000 4550 0    50   BiDi ~ 0
+IO_C04
+Text GLabel 8000 4250 0    50   BiDi ~ 0
+IO_C03
+Text GLabel 8000 4650 0    50   BiDi ~ 0
+IO_C05
+Text GLabel 8000 4450 0    50   BiDi ~ 0
+IO_C02
+Text GLabel 8000 4850 0    50   BiDi ~ 0
+IO_C06
+Text GLabel 8000 4150 0    50   BiDi ~ 0
+IO_C01
+Text GLabel 10200 4050 2    50   BiDi ~ 0
+IO_C07
+Text GLabel 8000 3950 0    50   BiDi ~ 0
+IO_C00
 $EndSCHEMATC
