@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 5)
+    (drawings 6)
     (tracks 222)
     (zones 0)
     (modules 51)
@@ -24,7 +24,7 @@
     (38 B.Mask user hide)
     (39 F.Mask user)
     (40 Dwgs.User user hide)
-    (41 Cmts.User user hide)
+    (41 Cmts.User user)
     (42 Eco1.User user hide)
     (43 Eco2.User user hide)
     (44 Edge.Cuts user)
@@ -36,7 +36,7 @@
   )
 
   (setup
-    (last_trace_width 0.508)
+    (last_trace_width 0.25)
     (user_trace_width 0.1016)
     (user_trace_width 0.1524)
     (user_trace_width 0.3048)
@@ -2612,6 +2612,9 @@
     )
   )
 
+  (gr_text "Oh yeah, this thing can be like 1.5-2x long." (at 73.7616 35.306) (layer Cmts.User)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (dimension 17.78 (width 0.15) (layer Cmts.User)
     (gr_text "0.7000 in" (at 31.75 14.194) (layer Cmts.User)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -2635,7 +2638,6 @@
   (via (at 37.084 23.495) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 37.211 22.0555) (end 37.211 23.368) (width 0.508) (layer F.Cu) (net 1))
   (segment (start 37.211 23.368) (end 37.084 23.495) (width 0.508) (layer F.Cu) (net 1))
-  (via (at 32.3342 17.1196) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6))
   (via (at 26.162 23.368) (size 0.4572) (drill 0.2286) (layers F.Cu B.Cu) (net 2))
   (via (at 27.686 23.368) (size 0.4572) (drill 0.2286) (layers F.Cu B.Cu) (net 2) (tstamp 5DF1CD85))
   (via (at 26.924 23.368) (size 0.4572) (drill 0.2286) (layers F.Cu B.Cu) (net 2) (tstamp 5DF1CF90))
@@ -2650,6 +2652,7 @@
   (segment (start 26.416 17.3505) (end 26.416 17.145) (width 0.3048) (layer B.Cu) (net 3))
   (segment (start 27.3535 18.288) (end 26.416 17.3505) (width 0.3048) (layer B.Cu) (net 3))
   (via (at 26.416 17.145) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 3))
+  (via (at 32.3342 17.1196) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 6))
   (segment (start 36.1465 20.32) (end 36.1465 18.288) (width 0.3048) (layer B.Cu) (net 6))
   (segment (start 34.0105 18.288) (end 33.782 18.5165) (width 0.3048) (layer B.Cu) (net 6))
   (segment (start 36.1465 18.288) (end 34.0105 18.288) (width 0.3048) (layer B.Cu) (net 6))
