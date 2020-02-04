@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:rpi3-83485-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -120,17 +119,6 @@ $EndComp
 Wire Wire Line
 	4750 1000 4750 1100
 Connection ~ 4750 1100
-$Comp
-L Device:R_Small_US R2
-U 1 1 5E38DBE3
-P 1650 2650
-F 0 "R2" V 1855 2650 50  0000 C CNN
-F 1 "100R" V 1764 2650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 1650 2650 50  0001 C CNN
-F 3 "~" H 1650 2650 50  0001 C CNN
-	1    1650 2650
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	4350 1250 4600 1250
 Wire Wire Line
@@ -155,18 +143,10 @@ Text Label 2950 1250 2    50   ~ 0
 ~RE
 Text Label 2950 1400 2    50   ~ 0
 DE
-Wire Wire Line
-	1300 2650 1550 2650
-Text Label 1350 2800 0    50   ~ 0
+Text Label 6950 1250 0    50   ~ 0
 DS+
-Text Label 1350 2650 0    50   ~ 0
+Text Label 6950 1550 0    50   ~ 0
 DS-
-Wire Wire Line
-	1800 2800 1800 2650
-Wire Wire Line
-	1800 2650 1750 2650
-Wire Wire Line
-	1300 2800 1800 2800
 Text Label 5450 1200 2    50   ~ 0
 ~RE
 Text Label 6250 1450 2    50   ~ 0
@@ -297,4 +277,77 @@ F 3 "" H 3660 1340 50  0001 C CNN
 	1    3650 1300
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 5E37DAB8
+P 7150 1400
+F 0 "R4" H 7218 1446 50  0000 L CNN
+F 1 "Rt" H 7218 1355 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7150 1400 50  0001 C CNN
+F 3 "~" H 7150 1400 50  0001 C CNN
+	1    7150 1400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 5E37DD28
+P 7150 1100
+F 0 "R2" H 7218 1146 50  0000 L CNN
+F 1 "Rb" H 7218 1055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7150 1100 50  0001 C CNN
+F 3 "~" H 7150 1100 50  0001 C CNN
+	1    7150 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 5E37E16C
+P 7150 1700
+F 0 "R5" H 7218 1746 50  0000 L CNN
+F 1 "Rb" H 7218 1655 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7150 1700 50  0001 C CNN
+F 3 "~" H 7150 1700 50  0001 C CNN
+	1    7150 1700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1200 7150 1250
+Wire Wire Line
+	7150 1600 7150 1550
+Wire Wire Line
+	6900 1550 7150 1550
+Connection ~ 7150 1550
+Wire Wire Line
+	7150 1550 7150 1500
+Wire Wire Line
+	6900 1250 7150 1250
+Connection ~ 7150 1250
+Wire Wire Line
+	7150 1250 7150 1300
+Wire Wire Line
+	7150 1000 7150 900 
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5E3829FD
+P 7150 900
+F 0 "#PWR0108" H 7150 750 50  0001 C CNN
+F 1 "+3V3" H 7165 1073 50  0000 C CNN
+F 2 "" H 7150 900 50  0001 C CNN
+F 3 "" H 7150 900 50  0001 C CNN
+	1    7150 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5E3830AE
+P 7150 1900
+F 0 "#PWR0109" H 7150 1650 50  0001 C CNN
+F 1 "GND" H 7155 1727 50  0000 C CNN
+F 2 "" H 7150 1900 50  0001 C CNN
+F 3 "" H 7150 1900 50  0001 C CNN
+	1    7150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7150 1900 7150 1800
 $EndSCHEMATC
