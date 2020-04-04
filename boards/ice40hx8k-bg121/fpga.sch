@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 2
-Title ""
-Date ""
-Rev ""
+Title "ice40hx8k-bg121 Breakout"
+Date "2020-04-04"
+Rev "2020-02"
 Comp ""
 Comment1 ""
 Comment2 ""
