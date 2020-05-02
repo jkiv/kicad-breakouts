@@ -1,0 +1,299 @@
+EESchema Schematic File Version 4
+LIBS:rpi3-isl83488-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J1
+U 1 1 5E385594
+P 1550 1300
+F 0 "J1" H 1600 1717 50  0000 C CNN
+F 1 "RPi" H 1600 1626 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Horizontal" H 1550 1300 50  0001 C CNN
+F 3 "~" H 1550 1300 50  0001 C CNN
+	1    1550 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0101
+U 1 1 5E386902
+P 1250 1100
+F 0 "#PWR0101" H 1250 950 50  0001 C CNN
+F 1 "+3V3" V 1265 1228 50  0000 L CNN
+F 2 "" H 1250 1100 50  0001 C CNN
+F 3 "" H 1250 1100 50  0001 C CNN
+	1    1250 1100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5E387BF1
+P 1250 1500
+F 0 "#PWR0102" H 1250 1250 50  0001 C CNN
+F 1 "GND" V 1255 1372 50  0000 R CNN
+F 2 "" H 1250 1500 50  0001 C CNN
+F 3 "" H 1250 1500 50  0001 C CNN
+	1    1250 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 1100 1350 1100
+Wire Wire Line
+	1350 1500 1250 1500
+NoConn ~ 1350 1400
+NoConn ~ 1350 1300
+NoConn ~ 1350 1200
+Text Label 1950 1500 2    50   ~ 0
+RX
+Text Label 1950 1400 2    50   ~ 0
+TX
+$Comp
+L power:GND #PWR0103
+U 1 1 5E388991
+P 2050 1300
+F 0 "#PWR0103" H 2050 1050 50  0001 C CNN
+F 1 "GND" V 2055 1172 50  0000 R CNN
+F 2 "" H 2050 1300 50  0001 C CNN
+F 3 "" H 2050 1300 50  0001 C CNN
+	1    2050 1300
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1850 1300 2050 1300
+NoConn ~ 1850 1200
+NoConn ~ 1850 1100
+$Comp
+L power:GND #PWR0104
+U 1 1 5E38C15F
+P 2750 1600
+F 0 "#PWR0104" H 2750 1350 50  0001 C CNN
+F 1 "GND" H 2755 1427 50  0000 C CNN
+F 2 "" H 2750 1600 50  0001 C CNN
+F 3 "" H 2750 1600 50  0001 C CNN
+	1    2750 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5E38C862
+P 2750 1300
+F 0 "C1" H 2842 1346 50  0000 L CNN
+F 1 "0.1u" H 2842 1255 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2750 1300 50  0001 C CNN
+F 3 "~" H 2750 1300 50  0001 C CNN
+	1    2750 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 5E38D253
+P 2750 950
+F 0 "#PWR0105" H 2750 800 50  0001 C CNN
+F 1 "+3V3" H 2765 1123 50  0000 C CNN
+F 2 "" H 2750 950 50  0001 C CNN
+F 3 "" H 2750 950 50  0001 C CNN
+	1    2750 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L jkiv-renesas:ISL83488 U1
+U 1 1 5EADFCEA
+P 3650 1250
+F 0 "U1" H 3650 1715 50  0000 C CNN
+F 1 "ISL83488" H 3650 1624 50  0000 C CNN
+F 2 "Package_SO:SO-8_3.9x4.9mm_P1.27mm" H 3650 1250 50  0001 C CNN
+F 3 "" H 3650 1250 50  0001 C CNN
+	1    3650 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2750 1400 2750 1500
+Wire Wire Line
+	2750 950  2750 1050
+Connection ~ 2750 1500
+Wire Wire Line
+	2750 1500 2750 1600
+Connection ~ 2750 1050
+Wire Wire Line
+	2750 1050 2750 1200
+Text Label 5200 1300 0    50   ~ 0
+RX-
+Text Label 5200 1400 0    50   ~ 0
+RX+
+Wire Wire Line
+	5150 1400 5400 1400
+Wire Wire Line
+	5150 1300 5400 1300
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E3A86AC
+P 5600 1200
+F 0 "J2" H 5680 1192 50  0000 L CNN
+F 1 "JST-GH" H 5680 1101 50  0000 L CNN
+F 2 "Connector_JST:JST_GH_SM04B-GHS-TB_1x04-1MP_P1.25mm_Horizontal" H 5600 1200 50  0001 C CNN
+F 3 "~" H 5600 1200 50  0001 C CNN
+	1    5600 1200
+	1    0    0    -1  
+$EndComp
+Text Label 5200 1200 0    50   ~ 0
+TX+
+Text Label 5200 1100 0    50   ~ 0
+TX-
+Wire Wire Line
+	5150 1100 5400 1100
+Wire Wire Line
+	5150 1200 5400 1200
+Wire Wire Line
+	1850 1400 1950 1400
+Wire Wire Line
+	1850 1500 1950 1500
+Text Label 2950 1200 0    50   ~ 0
+RX
+Wire Wire Line
+	2950 1200 3100 1200
+Text Label 2950 1350 0    50   ~ 0
+TX
+Wire Wire Line
+	2950 1350 3100 1350
+Wire Wire Line
+	3100 1050 2750 1050
+Wire Wire Line
+	3100 1500 2750 1500
+Wire Wire Line
+	6400 1200 6300 1200
+Wire Wire Line
+	6400 1300 6300 1300
+Text Label 6300 1200 0    50   ~ 0
+TX
+Text Label 6300 1300 0    50   ~ 0
+RX
+Wire Wire Line
+	4200 1350 4400 1350
+Text Label 4400 1500 2    50   ~ 0
+TX-
+Wire Wire Line
+	4400 1500 4200 1500
+Text Label 4400 1350 2    50   ~ 0
+TX+
+Text Label 4400 1050 2    50   ~ 0
+RX+
+Text Label 4400 1200 2    50   ~ 0
+RX-
+$Comp
+L Device:R_Small_US R1
+U 1 1 5EAFF5A1
+P 4600 1050
+F 0 "R1" V 4395 1050 50  0000 C CNN
+F 1 "120R" V 4486 1050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4600 1050 50  0001 C CNN
+F 3 "~" H 4600 1050 50  0001 C CNN
+	1    4600 1050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 1050 4500 1050
+Wire Wire Line
+	4850 1200 4850 1050
+Wire Wire Line
+	4200 1200 4850 1200
+$Comp
+L Device:R_Small_US R2
+U 1 1 5EB0693E
+P 7950 1100
+F 0 "R2" V 7745 1100 50  0000 C CNN
+F 1 "1k" V 7836 1100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 1100 50  0001 C CNN
+F 3 "~" H 7950 1100 50  0001 C CNN
+	1    7950 1100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 5EB06CC9
+P 7950 1450
+F 0 "R3" V 7745 1450 50  0000 C CNN
+F 1 "1k" V 7836 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7950 1450 50  0001 C CNN
+F 3 "~" H 7950 1450 50  0001 C CNN
+	1    7950 1450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 5EB07155
+P 8300 1100
+F 0 "D1" H 8293 1316 50  0000 C CNN
+F 1 "TX" H 8293 1225 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8300 1100 50  0001 C CNN
+F 3 "~" H 8300 1100 50  0001 C CNN
+	1    8300 1100
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 5EB086B9
+P 7650 900
+F 0 "#PWR0108" H 7650 750 50  0001 C CNN
+F 1 "+3V3" H 7665 1073 50  0000 C CNN
+F 2 "" H 7650 900 50  0001 C CNN
+F 3 "" H 7650 900 50  0001 C CNN
+	1    7650 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 900  7650 1100
+Wire Wire Line
+	7650 1450 7850 1450
+Wire Wire Line
+	7850 1100 7650 1100
+Connection ~ 7650 1100
+Wire Wire Line
+	7650 1100 7650 1450
+Wire Wire Line
+	8050 1100 8150 1100
+Wire Wire Line
+	8150 1450 8050 1450
+Wire Wire Line
+	8450 1450 8700 1450
+Wire Wire Line
+	8450 1100 8700 1100
+Text Label 8700 1100 2    50   ~ 0
+TX
+Text Label 8700 1450 2    50   ~ 0
+RX
+$Comp
+L Device:LED D2
+U 1 1 5EB07E38
+P 8300 1450
+F 0 "D2" H 8293 1666 50  0000 C CNN
+F 1 "RX" H 8293 1575 50  0000 C CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 8300 1450 50  0001 C CNN
+F 3 "~" H 8300 1450 50  0001 C CNN
+	1    8300 1450
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5EB2CCE5
+P 6600 1200
+F 0 "J3" H 6680 1192 50  0000 L CNN
+F 1 "SERIAL" H 6680 1101 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6600 1200 50  0001 C CNN
+F 3 "~" H 6600 1200 50  0001 C CNN
+	1    6600 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4700 1050 4850 1050
+$EndSCHEMATC
