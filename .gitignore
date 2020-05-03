@@ -3,6 +3,7 @@
 
 external/digikey-kicad-library/
 external/jkiv-kicad-library/
+external/KiCad-Schematic-Symbol-Libraries
 
 # Temporary files
 *.000
