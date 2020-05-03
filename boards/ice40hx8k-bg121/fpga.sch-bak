@@ -851,6 +851,8 @@ Text GLabel 5400 6800 0    50   BiDi ~ 0
 PROG_SS_B
 Text GLabel 6350 4200 2    50   BiDi ~ 0
 IO_D05
+Text Notes 250  2550 0    50   ~ 0
+VCC_SPI = VCC_IO2?
 Connection ~ 2000 7000
 $Comp
 L Device:C_Small C20
@@ -961,6 +963,4 @@ NoConn ~ 4150 4150
 NoConn ~ 9850 5350
 Wire Wire Line
 	1050 2300 1550 2300
-Text Notes 850  2650 0    50   ~ 0
-VCC_SPI = VCC_IO2?
 $EndSCHEMATC
