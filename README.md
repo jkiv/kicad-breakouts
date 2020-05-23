@@ -4,9 +4,11 @@ This project contains various breadboard-compatible breakouts for testing and ed
 
 ## Breakouts
 
-Device | Folder | Status | Link
---- | --- | --- | ---
-ICE40HX8K-BG121 | `/boards/ice40hx8k-bg121` | In progress... | ...
+| Device | Folder | Status | Link |
+| --- | --- | --- | --- |
+| ICE40HX8K-BG121 | `/boards/ice40hx8k-bg121` | In progress... | ... |
+| ISL83488/90 | `/boards/ice40hx8k-bg121` | In progress... | ... |
+|  | `/boards/ice40hx8k-bg121` | In progress... | ... |
 
 ## Dependencies
 
@@ -14,6 +16,7 @@ These projects are dependent on a couple open-source libraries. Clone these depe
 
 * [`digikey-kicad-library`](https://github.com/DigiKey/digikey-kicad-library)
 * [`jkiv-kicad-library`](https://github.com/jkiv/jkiv-kicad-library)
+* [Xess Kicad Symbol Library](https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries.git)
 
 ## Donations 
 
