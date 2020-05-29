@@ -4,7 +4,7 @@ This project contains various breadboard-compatible breakouts for testing and ed
 
 ## Breakouts
 
-| Device | Manufacturer | Folder | Status | External Link |
+| Device | Manufacturer | Folder | Status | External Links |
 | --- | --- | --- | --- | --- |
 | ICE40HX8K-BG121 | Lattice | `/boards/ice40hx8k-bg121` | In development... | [[1]](http://www.latticesemi.com/iCE40) |
 | ISL83488/90 | Renesas | `/boards/ice40hx8k-bg121` | In development... | [[2]](https://www.renesas.com/us/en/products/interface/rs-485-rs-422-rs-232/rs-485-rs-422/device/ISL83488.html) |
