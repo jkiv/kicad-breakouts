@@ -399,49 +399,6 @@ Text GLabel 4200 2150 2    50   BiDi ~ 0
 IO_A07
 Text GLabel 5200 3750 0    50   UnSpc ~ 0
 VCCIO_B
-Text GLabel 4200 1350 2    50   UnSpc ~ 0
-VCCIO_A
-Text GLabel 5100 2250 2    50   UnSpc ~ 0
-VCCIO_C
-$Comp
-L power:GND #PWR013
-U 1 1 5DECD89E
-P 5200 2550
-F 0 "#PWR013" H 5200 2300 50  0001 C CNN
-F 1 "GND" V 5205 2422 50  0000 R CNN
-F 2 "" H 5200 2550 50  0001 C CNN
-F 3 "" H 5200 2550 50  0001 C CNN
-	1    5200 2550
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5200 2550 5100 2550
-Wire Wire Line
-	4500 1250 4200 1250
-Wire Wire Line
-	5400 2350 5100 2350
-$Comp
-L power:+3V3 #PWR010
-U 1 1 5DFE30C6
-P 4500 1250
-F 0 "#PWR010" H 4500 1100 50  0001 C CNN
-F 1 "+3V3" H 4515 1423 50  0000 C CNN
-F 2 "" H 4500 1250 50  0001 C CNN
-F 3 "" H 4500 1250 50  0001 C CNN
-	1    4500 1250
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR011
-U 1 1 5DFE36E9
-P 5400 2350
-F 0 "#PWR011" H 5400 2200 50  0001 C CNN
-F 1 "+3V3" H 5415 2523 50  0000 C CNN
-F 2 "" H 5400 2350 50  0001 C CNN
-F 3 "" H 5400 2350 50  0001 C CNN
-	1    5400 2350
-	0    1    1    0   
-$EndComp
 Text GLabel 2150 5050 2    50   BiDi ~ 0
 IO_L5
 Text GLabel 2150 4650 2    50   BiDi ~ 0
@@ -488,28 +445,8 @@ Text GLabel 5200 3550 0    50   BiDi ~ 0
 IO_B06
 Text GLabel 5200 3450 0    50   BiDi ~ 0
 IO_B04
-Text GLabel 5100 1050 2    50   BiDi ~ 0
-PROG_SS_B
 Text GLabel 5100 1250 2    50   BiDi ~ 0
-PROG_SDO
-Text GLabel 5100 1150 2    50   BiDi ~ 0
-PROG_SDI
-Text GLabel 5100 1350 2    50   BiDi ~ 0
-PROG_SCK
-Text GLabel 5100 2150 2    50   BiDi ~ 0
-IO_C00
-Text GLabel 5100 2050 2    50   BiDi ~ 0
-IO_C01
-Text GLabel 5100 1650 2    50   BiDi ~ 0
-IO_C05
-Text GLabel 5100 1550 2    50   BiDi ~ 0
-IO_C06
-Text GLabel 5100 1750 2    50   BiDi ~ 0
-IO_C04
-Text GLabel 5100 1850 2    50   BiDi ~ 0
-IO_C03
-Text GLabel 5100 1950 2    50   BiDi ~ 0
-IO_C02
+PROG_SS_B
 Text GLabel 4150 3350 2    50   BiDi ~ 0
 IO_D03
 Text GLabel 4150 3250 2    50   BiDi ~ 0
@@ -654,8 +591,6 @@ Wire Wire Line
 Connection ~ 1500 1250
 Wire Wire Line
 	1500 1250 1600 1250
-Text GLabel 5100 1450 2    50   BiDi ~ 0
-IO_C07
 $Comp
 L Connector_Generic:Conn_01x16 J1
 U 1 1 5ECF239F
@@ -706,8 +641,6 @@ Text GLabel 4150 3750 2    50   UnSpc ~ 0
 VCCIO_D
 Text GLabel 4150 3550 2    50   BiDi ~ 0
 IO_D07
-Text GLabel 4200 1150 2    50   UnSpc ~ 0
-VCCIO_B
 $Comp
 L power:GND #PWR0107
 U 1 1 5EDE3D87
@@ -754,12 +687,302 @@ F 3 "~" H 5400 3450 50  0001 C CNN
 	1    5400 3450
 	1    0    0    -1  
 $EndComp
-Text Notes 4050 4000 0    50   ~ 0
-(PMOD are top-bottom numbered)
-Text GLabel 5100 2450 2    50   UnSpc ~ 0
-VCCIO_D
+Text Notes 3300 4000 0    50   ~ 0
+Note: PMOD are top-bottom numbered. Odd-even here to match footprint.
 Text GLabel 5700 3750 2    50   UnSpc ~ 0
 VCCIO_B
 Text GLabel 5200 3250 0    50   BiDi ~ 0
 IO_B00
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5EDCFB9B
+P 4500 5400
+F 0 "SW1" V 4454 5498 50  0000 L CNN
+F 1 "B3U-1000P" V 4545 5498 50  0000 L CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 4500 5400 50  0001 C CNN
+F 3 "~" H 4500 5400 50  0001 C CNN
+	1    4500 5400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R12
+U 1 1 5EDDAA98
+P 4300 5150
+F 0 "R12" V 4095 5150 50  0000 C CNN
+F 1 "10k" V 4186 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 5150 50  0001 C CNN
+F 3 "~" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5EDDE826
+P 4500 5600
+F 0 "#PWR0109" H 4500 5350 50  0001 C CNN
+F 1 "GND" H 4505 5427 50  0000 C CNN
+F 2 "" H 4500 5600 50  0001 C CNN
+F 3 "" H 4500 5600 50  0001 C CNN
+	1    4500 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 5EDDEE8E
+P 4050 5400
+F 0 "C20" H 4142 5446 50  0000 L CNN
+F 1 "0.1u" H 4142 5355 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4050 5400 50  0001 C CNN
+F 3 "~" H 4050 5400 50  0001 C CNN
+	1    4050 5400
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 5150
+Wire Wire Line
+	4050 5150 3850 5150
+$Comp
+L power:GND #PWR0110
+U 1 1 5EDE0AD4
+P 4050 5600
+F 0 "#PWR0110" H 4050 5350 50  0001 C CNN
+F 1 "GND" H 4055 5427 50  0000 C CNN
+F 2 "" H 4050 5600 50  0001 C CNN
+F 3 "" H 4050 5600 50  0001 C CNN
+	1    4050 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5300 4050 5150
+Wire Wire Line
+	4050 5500 4050 5600
+Wire Wire Line
+	4500 5050 4500 5150
+Wire Wire Line
+	4500 4800 4500 4850
+$Comp
+L power:+3V3 #PWR0111
+U 1 1 5EDE9958
+P 4500 4800
+F 0 "#PWR0111" H 4500 4650 50  0001 C CNN
+F 1 "+3V3" H 4515 4973 50  0000 C CNN
+F 2 "" H 4500 4800 50  0001 C CNN
+F 3 "" H 4500 4800 50  0001 C CNN
+	1    4500 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R14
+U 1 1 5EDE65F6
+P 4500 4950
+F 0 "R14" H 4568 4996 50  0000 L CNN
+F 1 "10k" H 4568 4905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4500 4950 50  0001 C CNN
+F 3 "~" H 4500 4950 50  0001 C CNN
+	1    4500 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4050 5150 4200 5150
+Wire Wire Line
+	4500 5150 4500 5200
+Wire Wire Line
+	4400 5150 4500 5150
+Text GLabel 3850 5150 0    50   BiDi ~ 0
+PROG_CRESET_B
+Connection ~ 4500 5150
+Text GLabel 5100 1150 2    50   BiDi ~ 0
+CDONE
+Text GLabel 5100 1050 2    50   BiDi ~ 0
+PROG_CRESET_B
+Text GLabel 5100 2150 2    50   BiDi ~ 0
+IO_C00
+Text GLabel 5100 2050 2    50   BiDi ~ 0
+IO_C01
+Text GLabel 5100 1850 2    50   BiDi ~ 0
+IO_C03
+Text GLabel 5100 1950 2    50   BiDi ~ 0
+IO_C02
+Text GLabel 5100 2350 2    50   Input ~ 0
+VCCIO_C
+Wire Wire Line
+	5200 2250 5100 2250
+$Comp
+L power:GND #PWR013
+U 1 1 5DECD89E
+P 5200 2250
+F 0 "#PWR013" H 5200 2000 50  0001 C CNN
+F 1 "GND" V 5205 2122 50  0000 R CNN
+F 2 "" H 5200 2250 50  0001 C CNN
+F 3 "" H 5200 2250 50  0001 C CNN
+	1    5200 2250
+	0    -1   -1   0   
+$EndComp
+Text GLabel 5100 1550 2    50   BiDi ~ 0
+PROG_SCK
+Text GLabel 5100 1350 2    50   BiDi ~ 0
+PROG_SDI
+Text GLabel 5100 1450 2    50   BiDi ~ 0
+PROG_SDO
+Wire Wire Line
+	5200 1650 5100 1650
+$Comp
+L power:GND #PWR0112
+U 1 1 5EDA85B4
+P 5200 1650
+F 0 "#PWR0112" H 5200 1400 50  0001 C CNN
+F 1 "GND" V 5205 1522 50  0000 R CNN
+F 2 "" H 5200 1650 50  0001 C CNN
+F 3 "" H 5200 1650 50  0001 C CNN
+	1    5200 1650
+	0    -1   -1   0   
+$EndComp
+Wire Notes Line
+	5050 1800 5800 1800
+Wire Notes Line
+	5800 950  5050 950 
+Wire Notes Line
+	5800 950  5800 2400
+Wire Notes Line
+	5050 950  5050 2400
+Text Notes 5900 2200 3    50   ~ 0
+PMOD
+Text Notes 5900 1800 1    50   ~ 0
+PROGRAMMING
+Text Notes 3250 2900 0    50   ~ 0
+PMOD
+Text Notes 4650 2900 0    50   ~ 0
+PMOD
+Wire Notes Line
+	4650 2950 4650 3850
+Wire Notes Line
+	3250 3850 3250 2950
+Wire Notes Line
+	6150 2950 6150 3850
+Wire Notes Line
+	3250 3850 6150 3850
+Wire Notes Line
+	3250 2950 6150 2950
+Text GLabel 4200 1350 2    50   Input ~ 0
+VCCIO_A
+Text GLabel 4200 1150 2    50   Input ~ 0
+VCCIO_B
+Text GLabel 5100 2550 2    50   Input ~ 0
+VCCIO_D
+Wire Notes Line
+	5050 2400 5800 2400
+$Comp
+L power:+3V3 #PWR0113
+U 1 1 5EDC1B9A
+P 5100 2450
+F 0 "#PWR0113" H 5100 2300 50  0001 C CNN
+F 1 "+3V3" V 5100 2550 50  0000 L CNN
+F 2 "" H 5100 2450 50  0001 C CNN
+F 3 "" H 5100 2450 50  0001 C CNN
+	1    5100 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR0114
+U 1 1 5EDC23C4
+P 4200 1250
+F 0 "#PWR0114" H 4200 1100 50  0001 C CNN
+F 1 "+3V3" V 4215 1378 50  0000 L CNN
+F 2 "" H 4200 1250 50  0001 C CNN
+F 3 "" H 4200 1250 50  0001 C CNN
+	1    4200 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP5
+U 1 1 5EDE83E7
+P 7500 3850
+F 0 "JP5" H 7500 4035 50  0000 C CNN
+F 1 "VCCIO_C" H 7500 3944 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 7500 3850 50  0001 C CNN
+F 3 "~" H 7500 3850 50  0001 C CNN
+	1    7500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP4
+U 1 1 5EDE896B
+P 7500 3550
+F 0 "JP4" H 7500 3735 50  0000 C CNN
+F 1 "VCCIO_B" H 7500 3644 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 7500 3550 50  0001 C CNN
+F 3 "~" H 7500 3550 50  0001 C CNN
+	1    7500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP3
+U 1 1 5EDE8C17
+P 7500 3250
+F 0 "JP3" H 7500 3435 50  0000 C CNN
+F 1 "VCCIO_A" H 7500 3344 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 7500 3250 50  0001 C CNN
+F 3 "~" H 7500 3250 50  0001 C CNN
+	1    7500 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP6
+U 1 1 5EDE9070
+P 7500 4150
+F 0 "JP6" H 7500 4335 50  0000 C CNN
+F 1 "VCCIO_D" H 7500 4244 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 7500 4150 50  0001 C CNN
+F 3 "~" H 7500 4150 50  0001 C CNN
+	1    7500 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0117
+U 1 1 5EDED1CD
+P 7250 3250
+F 0 "#PWR0117" H 7250 3100 50  0001 C CNN
+F 1 "+3V3" V 7265 3378 50  0000 L CNN
+F 2 "" H 7250 3250 50  0001 C CNN
+F 3 "" H 7250 3250 50  0001 C CNN
+	1    7250 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7250 3250 7300 3250
+Wire Wire Line
+	7300 3250 7300 3550
+Wire Wire Line
+	7300 3550 7400 3550
+Connection ~ 7300 3250
+Wire Wire Line
+	7300 3250 7400 3250
+Wire Wire Line
+	7300 3550 7300 3850
+Wire Wire Line
+	7300 3850 7400 3850
+Connection ~ 7300 3550
+Wire Wire Line
+	7300 3850 7300 4150
+Wire Wire Line
+	7300 4150 7400 4150
+Connection ~ 7300 3850
+Text GLabel 7600 3550 2    50   UnSpc ~ 0
+VCCIO_B
+Text GLabel 7600 4150 2    50   UnSpc ~ 0
+VCCIO_D
+Text GLabel 7600 3850 2    50   UnSpc ~ 0
+VCCIO_C
+Text GLabel 7600 3250 2    50   UnSpc ~ 0
+VCCIO_A
+$Comp
+L power:+3V3 #PWR0115
+U 1 1 5EF4307C
+P 5100 1750
+F 0 "#PWR0115" H 5100 1600 50  0001 C CNN
+F 1 "+3V3" V 5100 1850 50  0000 L CNN
+F 2 "" H 5100 1750 50  0001 C CNN
+F 3 "" H 5100 1750 50  0001 C CNN
+	1    5100 1750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

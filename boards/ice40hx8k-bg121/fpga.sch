@@ -159,8 +159,6 @@ Text Label 1500 1800 2    50   ~ 0
 GNDPLL0
 Wire Wire Line
 	1550 1800 1200 1800
-Wire Wire Line
-	1550 2500 1050 2500
 NoConn ~ 2950 2500
 $Comp
 L power:GND #PWR025
@@ -173,9 +171,6 @@ F 3 "" H 3100 2400 50  0001 C CNN
 	1    3100 2400
 	0    -1   -1   0   
 $EndComp
-Connection ~ 1050 2300
-Wire Wire Line
-	1050 2500 1050 2300
 Text Label 5150 5500 0    50   ~ 0
 FPGA_CLK
 $Comp
@@ -682,20 +677,12 @@ Text GLabel 4250 3450 0    50   BiDi ~ 0
 IO_L5
 Text GLabel 4250 3550 0    50   BiDi ~ 0
 IO_L1
-Text GLabel 7700 3650 0    50   BiDi ~ 0
-IO_C04
-Text GLabel 7700 3450 0    50   BiDi ~ 0
+Text GLabel 9900 2950 2    50   BiDi ~ 0
 IO_C03
-Text GLabel 7700 3550 0    50   BiDi ~ 0
-IO_C05
 Text GLabel 7700 3250 0    50   BiDi ~ 0
 IO_C02
-Text GLabel 7700 3850 0    50   BiDi ~ 0
-IO_C06
 Text GLabel 7700 3150 0    50   BiDi ~ 0
 IO_C01
-Text GLabel 9900 2950 2    50   BiDi ~ 0
-IO_C07
 Text GLabel 7700 2950 0    50   BiDi ~ 0
 IO_C00
 $Comp
@@ -762,11 +749,7 @@ Wire Wire Line
 	6550 5800 6650 5800
 Wire Wire Line
 	6550 5800 6550 5900
-Wire Wire Line
-	6500 5900 6550 5900
 Connection ~ 6550 5900
-Wire Wire Line
-	7150 4950 7050 4950
 Connection ~ 7050 4950
 Wire Wire Line
 	6650 5900 6550 5900
@@ -790,10 +773,6 @@ Text Label 6650 5700 2    50   ~ 0
 FLASH_SS_B
 Wire Wire Line
 	6650 5700 6200 5700
-Text GLabel 9900 3650 2    50   BiDi ~ 0
-CBSEL0
-Text GLabel 9900 3750 2    50   BiDi ~ 0
-CBSEL1
 Text Label 9000 5800 0    50   ~ 0
 FLASH_SS_B
 Text GLabel 8950 5800 0    50   BiDi ~ 0
@@ -825,10 +804,6 @@ Text Label 9000 5300 0    50   ~ 0
 FLASH_SDO
 Wire Wire Line
 	8950 5300 9500 5300
-Wire Notes Line
-	9850 6150 8250 6150
-Wire Notes Line
-	8250 4850 9850 4850
 Wire Wire Line
 	8950 5800 9500 5800
 NoConn ~ 4250 1250
@@ -866,8 +841,6 @@ NoConn ~ 4250 3850
 NoConn ~ 4250 3750
 NoConn ~ 4250 3250
 NoConn ~ 4250 3150
-Wire Wire Line
-	1050 2300 1550 2300
 Wire Wire Line
 	4800 5100 4800 5150
 Connection ~ 4800 5150
@@ -915,17 +888,6 @@ $EndComp
 Text GLabel 9900 3850 2    50   BiDi ~ 0
 CDONE
 $Comp
-L Device:R_Small_US R1
-U 1 1 5ED07A3E
-P 4300 7050
-F 0 "R1" H 4368 7096 50  0000 L CNN
-F 1 "10k" H 4368 7005 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 7050 50  0001 C CNN
-F 3 "~" H 4300 7050 50  0001 C CNN
-	1    4300 7050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R_Small_US R2
 U 1 1 5ED09720
 P 5100 7050
@@ -970,49 +932,22 @@ Wire Wire Line
 	4300 6900 4250 6900
 Wire Wire Line
 	5100 6900 5050 6900
-Text GLabel 4250 6900 0    50   BiDi ~ 0
-CBSEL0
 Text GLabel 5150 6900 2    50   BiDi ~ 0
 CBSEL1
-Text GLabel 6450 6800 0    50   UnSpc ~ 0
-VCCIO_C
 Text GLabel 9900 3950 2    50   BiDi ~ 0
 PROG_CRESET_B
-Wire Wire Line
-	6450 7200 6550 7200
-$Comp
-L Device:R_Small_US R12
-U 1 1 5E039345
-P 6550 7000
-F 0 "R12" H 6618 7046 50  0000 L CNN
-F 1 "10k" H 6618 6955 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 6550 7000 50  0001 C CNN
-F 3 "~" H 6550 7000 50  0001 C CNN
-	1    6550 7000
-	1    0    0    -1  
-$EndComp
-Text GLabel 6450 7200 0    50   BiDi ~ 0
-PROG_CRESET_B
-Wire Wire Line
-	6450 6800 6550 6800
 Text GLabel 9900 4350 2    50   BiDi ~ 0
 PROG_SS_B
 Text Notes 8250 4800 0    50   ~ 0
 SPI Master Configuration
 Wire Notes Line
-	9850 6150 9850 4850
+	9800 6150 9800 4850
 Wire Notes Line
 	8250 4850 8250 6150
 Wire Wire Line
 	6450 3000 6800 3000
-Wire Notes Line
-	3800 7450 6850 7450
-Wire Notes Line
-	6850 6550 3800 6550
 Text Notes 3800 6500 0    50   ~ 0
 Pull-ups/downs
-Text Notes 850  2650 0    50   ~ 0
-VCC_SPI = VCC_IO2?
 Wire Notes Line
 	6050 4850 8050 4850
 Wire Notes Line
@@ -1063,20 +998,6 @@ Wire Notes Line
 	3800 700  3800 4550
 Text Notes 3800 650  0    50   ~ 0
 IO
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5ED18FCB
-P 4450 6900
-F 0 "JP1" H 4450 7085 50  0000 C CNN
-F 1 "CBSEL1" H 4450 6994 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" H 4450 6900 50  0001 C CNN
-F 3 "~" H 4450 6900 50  0001 C CNN
-	1    4450 6900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4300 6900 4350 6900
-Connection ~ 4300 6900
 Wire Wire Line
 	5150 6900 5100 6900
 Connection ~ 5100 6900
@@ -1086,7 +1007,7 @@ U 1 1 5ED25103
 P 4950 6900
 F 0 "JP2" H 4950 7085 50  0000 C CNN
 F 1 "CBSEL0" H 4950 6994 50  0000 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" H 4950 6900 50  0001 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 4950 6900 50  0001 C CNN
 F 3 "~" H 4950 6900 50  0001 C CNN
 	1    4950 6900
 	1    0    0    -1  
@@ -1110,37 +1031,11 @@ F 3 "" H 4700 6800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	6850 6550 6850 7450
+	5650 6550 5650 7450
 Wire Notes Line
 	3800 6550 3800 7450
-Wire Wire Line
-	6550 7100 6550 7200
-Wire Wire Line
-	6550 6800 6550 6900
 NoConn ~ 6450 1150
 NoConn ~ 6450 1250
-$Comp
-L power:+3V3 #PWR0109
-U 1 1 5EE7CEF9
-P 7150 4950
-F 0 "#PWR0109" H 7150 4800 50  0001 C CNN
-F 1 "+3V3" V 7165 5078 50  0000 L CNN
-F 2 "" H 7150 4950 50  0001 C CNN
-F 3 "" H 7150 4950 50  0001 C CNN
-	1    7150 4950
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0110
-U 1 1 5EE7E81E
-P 6500 5900
-F 0 "#PWR0110" H 6500 5750 50  0001 C CNN
-F 1 "+3V3" V 6515 6028 50  0000 L CNN
-F 2 "" H 6500 5900 50  0001 C CNN
-F 3 "" H 6500 5900 50  0001 C CNN
-	1    6500 5900
-	0    -1   -1   0   
-$EndComp
 Text GLabel 6450 3800 2    50   BiDi ~ 0
 IO_D07
 Text GLabel 6450 3500 2    50   BiDi ~ 0
@@ -1158,4 +1053,62 @@ NoConn ~ 9900 1700
 NoConn ~ 9900 1800
 Text GLabel 9900 2000 2    50   BiDi ~ 0
 IO_B01
+Wire Notes Line
+	8250 6150 9800 6150
+Wire Notes Line
+	9800 4850 8250 4850
+Wire Notes Line
+	5650 7450 3800 7450
+Wire Notes Line
+	5650 6550 3800 6550
+Connection ~ 4300 6900
+Wire Wire Line
+	4300 6900 4350 6900
+Text GLabel 4250 6900 0    50   BiDi ~ 0
+CBSEL0
+$Comp
+L Device:R_Small_US R1
+U 1 1 5ED07A3E
+P 4300 7050
+F 0 "R1" H 4368 7096 50  0000 L CNN
+F 1 "10k" H 4368 7005 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4300 7050 50  0001 C CNN
+F 3 "~" H 4300 7050 50  0001 C CNN
+	1    4300 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP1
+U 1 1 5ED18FCB
+P 4450 6900
+F 0 "JP1" H 4450 7085 50  0000 C CNN
+F 1 "CBSEL1" H 4450 6994 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 4450 6900 50  0001 C CNN
+F 3 "~" H 4450 6900 50  0001 C CNN
+	1    4450 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9900 3750 2    50   BiDi ~ 0
+CBSEL1
+Text GLabel 9900 3650 2    50   BiDi ~ 0
+CBSEL0
+Wire Wire Line
+	1050 2300 1050 2500
+Text Label 7150 4950 0    50   ~ 0
+VCC_SPI
+Wire Wire Line
+	7050 4950 7450 4950
+Text Label 6500 5900 2    50   ~ 0
+VCC_SPI
+Wire Wire Line
+	6200 5900 6550 5900
+Connection ~ 1050 2300
+Wire Wire Line
+	1050 2300 1550 2300
+Wire Wire Line
+	1050 2500 1550 2500
+NoConn ~ 7700 3850
+NoConn ~ 7700 3650
+NoConn ~ 7700 3550
+NoConn ~ 7700 3450
 $EndSCHEMATC

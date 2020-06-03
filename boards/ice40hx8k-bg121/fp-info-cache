@@ -1,4 +1,4 @@
-16307379518419213
+16308970690946525
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -72911,6 +72911,13 @@ IHLP-3232DZ
 0
 0
 0
+jkiv-library
+J_NO_0201_0603Metric
+Resistor SMD 0201 (0603 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://www.vishay.com/docs/20052/crcw0201e3.pdf), generated with kicad-footprint-generator
+resistor
+0
+4
+2
 jkiv-library
 SOT89-5
 
