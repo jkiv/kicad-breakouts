@@ -10,7 +10,7 @@ This project contains various breadboard-compatible breakouts for testing and ed
 | ISL83488/90 | Renesas | `/boards/rpi-isl83488` | In development... | [[2]](https://www.renesas.com/us/en/products/interface/rs-485-rs-422-rs-232/rs-485-rs-422/device/ISL83488.html) |
 | ISL83485 | Renesas | `/boards/rpi-isl83485` | In development... | [[3]](https://www.renesas.com/us/en/products/interface/rs-485-rs-422-rs-232/rs-485-rs-422/device/ISL83488.html) |
 | FT221X | FTDI | `/boards/ft221x` | In development... | [[4]](https://www.ftdichip.com/Products/ICs/FT221X.html) |
-| FT2232H | FTDI | `/boards/ft2232h-ice40` | In development... | [[5]](https://www.ftdichip.com/Products/ICs/FT221X.html) |
+| FT2232H | FTDI | `/boards/ft2232h-ice40` | In development... | [[5]](https://www.ftdichip.com/Products/ICs/FT2232H.htm) |
 | ATSAMD21E18A | Atmel | `/boards/atsamd21e18a` | In development... | [[6]](https://www.microchip.com/wwwproducts/en/ATsamd21e18) |
 | ATSAMD21E18A (2-layer) | Atmel | `/boards/atsamd21e18a-2layer` | In development... | [[7]](https://www.microchip.com/wwwproducts/en/ATsamd21e18) |
 
