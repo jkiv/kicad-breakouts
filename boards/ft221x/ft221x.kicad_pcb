@@ -405,7 +405,7 @@
     (tags resistor)
     (path /5EB0F307)
     (attr smd)
-    (fp_text reference R1 (at 0 -1.65 90) (layer F.SilkS)
+    (fp_text reference R1 (at 0 -1.65 90) (layer F.SilkS) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 100k (at 0 1.65 90) (layer F.Fab)
