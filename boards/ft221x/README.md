@@ -2,9 +2,9 @@
 
 ## About
 
-![Profile image of ft221x breakout board](https://raw.githubusercontent.com/jkiv/kicad-breakouts/main/boards/ft221x/images/ft221x_profile.png)
-
 This is a breadboardable breakout for the USB-to-SPI [FT221X](https://www.ftdichip.com/Products/ICs/FT221X.html) chip.
+
+![Profile image of ft221x breakout board](https://raw.githubusercontent.com/jkiv/kicad-breakouts/main/boards/ft221x/images/ft221x_profile.png)
 
 ## Rationale
 
