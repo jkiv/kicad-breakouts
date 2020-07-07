@@ -1,3 +1,0 @@
-(fp_lib_table
-  (lib (name jkiv-library)(type KiCad)(uri ${KIPRJMOD}/../../external/jkiv-kicad-library/jkiv-library.pretty)(options "")(descr ""))
-)
