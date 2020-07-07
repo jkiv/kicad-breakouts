@@ -72,29 +72,16 @@ $EndComp
 $Comp
 L power:+3V3 #PWR021
 U 1 1 5EC65240
-P 9650 1550
-F 0 "#PWR021" H 9650 1400 50  0001 C CNN
-F 1 "+3V3" H 9665 1723 50  0000 C CNN
-F 2 "" H 9650 1550 50  0001 C CNN
-F 3 "" H 9650 1550 50  0001 C CNN
-	1    9650 1550
+P 9600 1950
+F 0 "#PWR021" H 9600 1800 50  0001 C CNN
+F 1 "+3V3" H 9615 2123 50  0000 C CNN
+F 2 "" H 9600 1950 50  0001 C CNN
+F 3 "" H 9600 1950 50  0001 C CNN
+	1    9600 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 1550 9650 1650
-$Comp
-L Device:Jumper_NO_Small JP2
-U 1 1 5EC66F95
-P 9800 1650
-F 0 "JP2" H 9800 1750 50  0000 C CNN
-F 1 "SWD_VCC" H 9800 1600 50  0001 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" H 9800 1650 50  0001 C CNN
-F 3 "~" H 9800 1650 50  0001 C CNN
-	1    9800 1650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9700 1650 9650 1650
+	9600 1950 9600 2050
 $Comp
 L Connector_Generic:Conn_02x05_Odd_Even J4
 U 1 1 5EC6B2D2
@@ -127,8 +114,6 @@ $EndComp
 Wire Wire Line
 	9600 2150 9650 2150
 Connection ~ 9650 2150
-Text Label 9350 2050 0    50   ~ 0
-SWD_3V3
 $Comp
 L power:GND #PWR020
 U 1 1 5EC6FEAC
@@ -146,18 +131,12 @@ Text Label 10200 2050 0    50   ~ 0
 SWD_IO
 Text Label 10200 2150 0    50   ~ 0
 SWD_CLK
-Wire Wire Line
-	9350 2050 9700 2050
 NoConn ~ 10200 2350
 NoConn ~ 10200 2250
 Wire Wire Line
 	10200 2050 10550 2050
 Wire Wire Line
 	10200 2150 10550 2150
-Text Label 10250 1650 2    50   ~ 0
-SWD_3V3
-Wire Wire Line
-	10250 1650 9900 1650
 $Comp
 L Device:C_Small C6
 U 1 1 5EC79B94
@@ -813,25 +792,6 @@ Wire Wire Line
 	10200 2450 10450 2450
 NoConn ~ 6050 1500
 Wire Wire Line
-	1350 1550 1650 1550
-Text Label 1350 1550 0    50   ~ 0
-USB_SOF
-$Comp
-L Device:Jumper_NO_Small JP1
-U 1 1 5ECB33DF
-P 6000 2900
-F 0 "JP1" H 6000 3000 50  0000 C CNN
-F 1 "USB_SOF" H 6000 2850 50  0001 C CNN
-F 2 "Resistor_SMD:R_0201_0603Metric" H 6000 2900 50  0001 C CNN
-F 3 "~" H 6000 2900 50  0001 C CNN
-	1    6000 2900
-	1    0    0    -1  
-$EndComp
-Text Label 6150 2900 0    50   ~ 0
-USB_SOF
-Wire Wire Line
-	6100 2900 6500 2900
-Wire Wire Line
 	5700 2900 5900 2900
 Wire Wire Line
 	8250 2700 8450 2700
@@ -964,5 +924,19 @@ F 2 "Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm" H 7950 3700 50  0001 C CNN
 F 3 "~" H 7950 3700 50  0001 C CNN
 	1    7950 3700
 	1    0    0    -1  
+$EndComp
+NoConn ~ 1350 1550
+Wire Wire Line
+	9600 2050 9700 2050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F0A4500
+P 5900 2900
+F 0 "TP1" V 5854 3088 50  0000 L CNN
+F 1 "USB_SOF" V 5945 3088 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6100 2900 50  0001 C CNN
+F 3 "~" H 6100 2900 50  0001 C CNN
+	1    5900 2900
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
