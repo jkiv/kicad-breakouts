@@ -5,9 +5,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "ft221x breakout"
-Date "2020-05-03"
-Rev "2020-01"
+Title "ft221x"
+Date "2020-11-09"
+Rev "2020-02"
 Comp "fourside.io"
 Comment1 ""
 Comment2 ""
