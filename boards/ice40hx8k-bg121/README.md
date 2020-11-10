@@ -11,6 +11,7 @@ This is a breadboardable breakout board for a Lattice iCE40HX8K FPGA.
 * Settable VIO for IO Banks A, B, and D.
 * 12-pin PMOD compatible pinout for IO banks B and D.
 * 6-pin PMOD compatible pinout for IO bank C.
+* On-board 2Mbit flash memory.
 * On-board 12MHz clock source.
 * On-board reset button.
 
