@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "ft2232h-ice40"
+Date "2020-11-09"
+Rev "2020-02"
+Comp "fourside"
 Comment1 ""
 Comment2 ""
 Comment3 ""

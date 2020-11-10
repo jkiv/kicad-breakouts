@@ -6,7 +6,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "atsamd21e18a"
-Date "2020-09-21"
+Date "2020-11-09"
 Rev "2020-04"
 Comp "fourside.io"
 Comment1 ""
