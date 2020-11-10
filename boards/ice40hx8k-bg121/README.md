@@ -17,7 +17,7 @@ This is a breadboardable breakout board for a Lattice iCE40HX8K FPGA.
 
 *This board does **not** contain programming circuitry. The [`ft2232h-ice40` breakout](https://github.com/jkiv/kicad-breakouts/tree/main/boards/ft2232h-ice40) is intended to provide the programming circuitry for this board.*
 
-![Profile image of the ice40hx8k-bg121 breakout board](https://raw.githubusercontent.com/jkiv/kicad-breakouts/main/boards/ice40hx8k-bg121/images/ice40hx8k-bg121_profile.png)
+<img src="images/ice40hx8k-bg121_profile.png" alt="Profile image of the ice40hx8k-bg121 breakout board" style="zoom:50%;" />
 
 ## Rationale
 

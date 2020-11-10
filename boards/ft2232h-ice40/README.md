@@ -4,7 +4,7 @@
 
 This board breaks out the signals required to program a Lattice ice40 FPGA via USB using [`iceprog`](https://github.com/YosysHQ/icestorm/tree/master/iceprog).
 
-![Profile image of ft2232h-ice40 breakout board](https://raw.githubusercontent.com/jkiv/kicad-breakouts/main/boards/ft2232h-ice40/images/ft2232h-ice40_profile.png)
+<img src="images/ft2232h-ice40_profile.png" alt="Profile image of ft2232h-ice40 breakout board" style="zoom:50%;" />
 
 ## Rationale
 
