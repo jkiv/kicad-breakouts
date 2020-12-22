@@ -786,14 +786,10 @@ Wire Wire Line
 NoConn ~ 6050 1500
 Wire Wire Line
 	5700 2900 5900 2900
-Wire Wire Line
-	8250 2350 8450 2350
 Text Label 8450 2350 2    50   ~ 0
-PA14
-Wire Wire Line
-	8250 2250 8450 2250
+PA14_NO
 Text Label 8450 2250 2    50   ~ 0
-PA15
+PA15_NO
 Text Label 8450 1550 2    50   ~ 0
 PA28
 Wire Wire Line
@@ -965,4 +961,46 @@ Wire Wire Line
 Text Label 1100 1550 2    50   ~ 0
 USB_SHIELD
 NoConn ~ 5900 2900
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FE4D8D7
+P 3250 3550
+F 0 "JP?" H 3250 3735 50  0000 C CNN
+F 1 "J_PA14" H 3250 3644 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3550 50  0001 C CNN
+F 3 "~" H 3250 3550 50  0001 C CNN
+	1    3250 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper_NO_Small JP?
+U 1 1 5FE4BF46
+P 3250 3650
+F 0 "JP?" H 3250 3450 50  0000 C CNN
+F 1 "J_PA15" H 3250 3550 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3650 50  0001 C CNN
+F 3 "~" H 3250 3650 50  0001 C CNN
+	1    3250 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2250 8450 2250
+Wire Wire Line
+	8100 2350 8450 2350
+Text Label 3100 3550 2    50   ~ 0
+PA14
+Wire Wire Line
+	2900 3550 3150 3550
+Text Label 3100 3650 2    50   ~ 0
+PA15
+Wire Wire Line
+	2900 3650 3150 3650
+Text Label 3400 3650 0    50   ~ 0
+PA15_NO
+Text Label 3400 3550 0    50   ~ 0
+PA14_NO
+Wire Wire Line
+	3350 3550 3750 3550
+Wire Wire Line
+	3350 3650 3750 3650
 $EndSCHEMATC
