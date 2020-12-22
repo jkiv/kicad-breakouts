@@ -419,10 +419,6 @@ Wire Wire Line
 	7250 2250 7450 2250
 Text Label 7450 2250 2    50   ~ 0
 PA10
-Wire Wire Line
-	7250 2350 7450 2350
-Text Label 7450 2350 2    50   ~ 0
-PA11
 $Comp
 L power:+5V #PWR013
 U 1 1 5ED3DC70
@@ -432,21 +428,6 @@ F 1 "+5V" H 7415 1273 50  0000 C CNN
 F 2 "" H 7400 1100 50  0001 C CNN
 F 3 "" H 7400 1100 50  0001 C CNN
 	1    7400 1100
-	1    0    0    -1  
-$EndComp
-Text Label 8450 1250 2    50   ~ 0
-~RESET
-Wire Wire Line
-	8450 1250 8200 1250
-$Comp
-L power:+3V3 #PWR017
-U 1 1 5ED66D9D
-P 8400 1100
-F 0 "#PWR017" H 8400 950 50  0001 C CNN
-F 1 "+3V3" H 8415 1273 50  0000 C CNN
-F 2 "" H 8400 1100 50  0001 C CNN
-F 3 "" H 8400 1100 50  0001 C CNN
-	1    8400 1100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -464,10 +445,6 @@ Wire Wire Line
 	7400 2500 7400 2450
 Wire Wire Line
 	7400 2450 7450 2450
-Wire Wire Line
-	8400 1100 8400 1150
-Wire Wire Line
-	8400 1150 8450 1150
 Wire Wire Line
 	7450 1150 7400 1150
 Wire Wire Line
@@ -786,38 +763,38 @@ Wire Wire Line
 NoConn ~ 6050 1500
 Wire Wire Line
 	5700 2900 5900 2900
-Text Label 8450 2350 2    50   ~ 0
+Text Label 8450 2150 2    50   ~ 0
 PA14_NO
-Text Label 8450 2250 2    50   ~ 0
+Text Label 8450 2050 2    50   ~ 0
 PA15_NO
-Text Label 8450 1550 2    50   ~ 0
+Text Label 8450 1350 2    50   ~ 0
 PA28
+Wire Wire Line
+	8250 1350 8450 1350
+Text Label 8450 1450 2    50   ~ 0
+PA27
+Wire Wire Line
+	8250 1450 8450 1450
+Text Label 8450 1550 2    50   ~ 0
+PA22
 Wire Wire Line
 	8250 1550 8450 1550
 Text Label 8450 1650 2    50   ~ 0
-PA27
+PA19
 Wire Wire Line
 	8250 1650 8450 1650
 Text Label 8450 1750 2    50   ~ 0
-PA22
+PA18
 Wire Wire Line
 	8250 1750 8450 1750
 Text Label 8450 1850 2    50   ~ 0
-PA19
+PA17
 Wire Wire Line
 	8250 1850 8450 1850
 Text Label 8450 1950 2    50   ~ 0
-PA18
-Wire Wire Line
-	8250 1950 8450 1950
-Text Label 8450 2050 2    50   ~ 0
-PA17
-Wire Wire Line
-	8250 2050 8450 2050
-Text Label 8450 2150 2    50   ~ 0
 PA16
 Wire Wire Line
-	8250 2150 8450 2150
+	8250 1950 8450 1950
 Wire Wire Line
 	8400 2450 8450 2450
 Wire Wire Line
@@ -833,14 +810,6 @@ F 3 "" H 8400 2500 50  0001 C CNN
 	1    8400 2500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8450 1350 8150 1350
-Text Label 8450 1350 2    50   ~ 0
-SWD_IO
-Wire Wire Line
-	8450 1450 8100 1450
-Text Label 8450 1450 2    50   ~ 0
-SWD_CLK
 $Comp
 L power:GND #PWR016
 U 1 1 5EF591D7
@@ -962,45 +931,88 @@ Text Label 1100 1550 2    50   ~ 0
 USB_SHIELD
 NoConn ~ 5900 2900
 $Comp
-L Device:Jumper_NO_Small JP?
+L Device:Jumper_NO_Small JP1
 U 1 1 5FE4D8D7
-P 3250 3550
-F 0 "JP?" H 3250 3735 50  0000 C CNN
-F 1 "J_PA14" H 3250 3644 50  0000 C CNN
-F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3550 50  0001 C CNN
-F 3 "~" H 3250 3550 50  0001 C CNN
-	1    3250 3550
+P 3250 3400
+F 0 "JP1" H 3250 3585 50  0000 C CNN
+F 1 "J_PA14" H 3250 3494 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3400 50  0001 C CNN
+F 3 "~" H 3250 3400 50  0001 C CNN
+	1    3250 3400
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Jumper_NO_Small JP?
+L Device:Jumper_NO_Small JP2
 U 1 1 5FE4BF46
-P 3250 3650
-F 0 "JP?" H 3250 3450 50  0000 C CNN
-F 1 "J_PA15" H 3250 3550 50  0000 C CNN
-F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3650 50  0001 C CNN
-F 3 "~" H 3250 3650 50  0001 C CNN
-	1    3250 3650
+P 3250 3500
+F 0 "JP2" H 3250 3300 50  0000 C CNN
+F 1 "J_PA15" H 3250 3400 50  0000 C CNN
+F 2 "jkiv-library:J_NO_0201_0603Metric" H 3250 3500 50  0001 C CNN
+F 3 "~" H 3250 3500 50  0001 C CNN
+	1    3250 3500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8100 2250 8450 2250
+	8100 2050 8450 2050
 Wire Wire Line
-	8100 2350 8450 2350
-Text Label 3100 3550 2    50   ~ 0
+	8100 2150 8450 2150
+Text Label 3100 3400 2    50   ~ 0
 PA14
 Wire Wire Line
-	2900 3550 3150 3550
-Text Label 3100 3650 2    50   ~ 0
+	2900 3400 3150 3400
+Text Label 3100 3500 2    50   ~ 0
 PA15
 Wire Wire Line
-	2900 3650 3150 3650
-Text Label 3400 3650 0    50   ~ 0
+	2900 3500 3150 3500
+Text Label 3400 3500 0    50   ~ 0
 PA15_NO
-Text Label 3400 3550 0    50   ~ 0
+Text Label 3400 3400 0    50   ~ 0
 PA14_NO
 Wire Wire Line
-	3350 3550 3750 3550
+	3350 3400 3750 3400
 Wire Wire Line
-	3350 3650 3750 3650
+	3350 3500 3750 3500
+Text Label 7450 2350 2    50   ~ 0
+PA11
+Wire Wire Line
+	7250 2350 7450 2350
+Wire Wire Line
+	8450 2250 8200 2250
+Text Label 8450 2250 2    50   ~ 0
+~RESET
+Wire Wire Line
+	8450 2350 8400 2350
+$Comp
+L power:+3V3 #PWR017
+U 1 1 5ED66D9D
+P 8200 1050
+F 0 "#PWR017" H 8200 900 50  0001 C CNN
+F 1 "+3V3" H 8215 1223 50  0000 C CNN
+F 2 "" H 8200 1050 50  0001 C CNN
+F 3 "" H 8200 1050 50  0001 C CNN
+	1    8200 1050
+	1    0    0    -1  
+$EndComp
+Connection ~ 8400 2450
+Wire Wire Line
+	8400 2350 8400 2450
+$Comp
+L power:+5V #PWR?
+U 1 1 5FF55CE8
+P 8400 1050
+F 0 "#PWR?" H 8400 900 50  0001 C CNN
+F 1 "+5V" H 8415 1223 50  0000 C CNN
+F 2 "" H 8400 1050 50  0001 C CNN
+F 3 "" H 8400 1050 50  0001 C CNN
+	1    8400 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8200 1250 8200 1050
+Wire Wire Line
+	8200 1250 8450 1250
+Wire Wire Line
+	8450 1150 8400 1150
+Wire Wire Line
+	8400 1150 8400 1050
 $EndSCHEMATC
