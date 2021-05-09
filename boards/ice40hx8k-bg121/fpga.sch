@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:ice40hx8k-bg121-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -823,12 +822,10 @@ NoConn ~ 7700 1400
 NoConn ~ 7700 1300
 NoConn ~ 7700 1200
 NoConn ~ 7700 1100
-NoConn ~ 9900 3550
 NoConn ~ 9900 3450
 NoConn ~ 9900 3350
 NoConn ~ 9900 3250
 NoConn ~ 9900 3150
-NoConn ~ 9900 3050
 NoConn ~ 7700 3750
 NoConn ~ 7700 3350
 NoConn ~ 7700 3050
@@ -1111,4 +1108,7 @@ NoConn ~ 7700 3850
 NoConn ~ 7700 3650
 NoConn ~ 7700 3550
 NoConn ~ 7700 3450
+Text GLabel 9900 3550 2    50   BiDi ~ 0
+IO_C04
+NoConn ~ 9900 3050
 $EndSCHEMATC
