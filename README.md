@@ -16,8 +16,9 @@ This project contains various breadboard-compatible breakouts for testing and ed
 
 These projects are dependent on a couple open-source libraries. Clone these dependencies to the `/external` directory.
 
-* [`DigiKey/digikey-kicad-library`](https://github.com/DigiKey/digikey-kicad-library)
 * [`jkiv/jkiv-kicad-library`](https://github.com/jkiv/jkiv-kicad-library)
+* [`DigiKey/digikey-kicad-library`](https://github.com/DigiKey/digikey-kicad-library)
+* [`xesscorp/KiCad-Schematic-Symbol-Libraries`](https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries)
 
 ## Donations 
 
