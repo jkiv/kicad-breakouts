@@ -220,9 +220,9 @@ Text HLabel 1150 8050 0    50   BiDi ~ 0
 GPIO_23
 Text HLabel 1150 8750 0    50   BiDi ~ 0
 GPIO_24
-Text HLabel 1150 8950 0    50   BiDi ~ 0
-GPIO_25
 Text HLabel 1150 8850 0    50   BiDi ~ 0
+GPIO_25
+Text HLabel 1150 8950 0    50   BiDi ~ 0
 GPIO_26
 Text HLabel 1150 9050 0    50   BiDi ~ 0
 GPIO_27
