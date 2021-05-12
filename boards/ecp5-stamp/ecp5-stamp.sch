@@ -1703,4 +1703,15 @@ Text Label 1150 3350 2    50   ~ 0
 BOOTSEL
 Wire Wire Line
 	850  3350 1200 3350
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 60DF8320
+P 1450 6900
+F 0 "LOGO1" H 1450 7175 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1450 6675 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 1450 6900 50  0001 C CNN
+F 3 "~" H 1450 6900 50  0001 C CNN
+	1    1450 6900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
