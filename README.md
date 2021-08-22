@@ -14,10 +14,16 @@ This project contains various breadboard-compatible breakouts for testing and ed
 
 ## Dependencies
 
-These projects are dependent on a couple open-source libraries. Clone these dependencies to the `/external` directory.
+This project depends on the following KiCad libraries:
 
-* [`DigiKey/digikey-kicad-library`](https://github.com/DigiKey/digikey-kicad-library)
-* [`jkiv/jkiv-kicad-library`](https://github.com/jkiv/jkiv-kicad-library)
+* [Digi-Key/digikey-kicad-library](https://github.com/Digi-Key/digikey-kicad-library)
+* [jkiv/jkiv-kicad-library](https://github.com/jkiv/jkiv-kicad-library)
+
+These repositories are set up as git submodules and can be cloned into `hardware/external/` using the following two commands:
+
+    $ git submodule init
+    $ git submodule update
+
 
 ## Donations 
 

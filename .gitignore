@@ -1,10 +1,6 @@
 # For PCBs designed using KiCad: http://www.kicad-pcb.org/
 # Format documentation: http://kicad-pcb.org/help/file-formats/
 
-external/digikey-kicad-library/
-external/jkiv-kicad-library/
-external/KiCad-Schematic-Symbol-Libraries
-
 # Gerber folders
 
 gerbers/
