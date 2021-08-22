@@ -8,7 +8,8 @@ This project contains various breadboard-compatible breakouts for testing and ed
 
 | Device | Manufacturer | Folder | Status | External Links |
 | --- | --- | --- | --- | --- |
-| ICE40HX8K-BG121 | Lattice | `/boards/ice40hx8k-bg121` | In development... | [[1]](http://www.latticesemi.com/iCE40) |
+| ICE40HX8K (caBGA-121) | Lattice | `/boards/ice40hx8k-bg121` | In development... | [[1]](http://www.latticesemi.com/iCE40) |
+| LFE5U-* (csBGA-285) | Lattice | `/boards/ecp5-stamp` | In development... | [[2]](http://www.latticesemi.com/ECP5) |
 | FT2232H | FTDI | `/boards/ft2232h-ice40` | In development... | [[3]](https://www.ftdichip.com/Products/ICs/FT2232H.htm) |
 | ATSAMD21E18A | Atmel | `/boards/atsamd21e18a` | In development... | [[4]](https://www.microchip.com/wwwproducts/en/ATsamd21e18) |
 
