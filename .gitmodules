@@ -4,3 +4,6 @@
 [submodule "external/jkiv-kicad-library"]
 	path = external/jkiv-kicad-library
 	url = https://github.com/jkiv/jkiv-kicad-library
+[submodule "external/KiCad-Schematic-Symbol-Libraries"]
+	path = external/KiCad-Schematic-Symbol-Libraries
+	url = https://github.com/xesscorp/KiCad-Schematic-Symbol-Libraries
